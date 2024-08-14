@@ -29,5 +29,11 @@ namespace PEPRN231_SU24_009909_LamMinhDang_BE.Controllers
             }
             return Ok(_tokenGenerator.GenerateToken(exitedUser));
         }
+        [HttpPost("test")]
+        public async Task<IActionResult> test()
+        {
+            
+            return Ok("Code Pipeline works =))");
+        }
     }
 }
